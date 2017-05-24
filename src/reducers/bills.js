@@ -17,7 +17,7 @@ const defaultState = {
             createdAt: 1495550671680,
             history: [
                 {
-                    id: 'wv31RdN',
+                    id: 'wv31RdN', // сделано специально для вывода переписки при запуске приложения
                     billId: 57890456,
                     date: 1501777260000,
                     cardNumber: '0465',
