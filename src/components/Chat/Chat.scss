@@ -1,0 +1,19 @@
+@import '../../styles/colors';
+
+.chat {
+    display: flex;
+    flex-direction: column;
+
+    width: 893px;
+    height: 100vh;
+    padding: 62px 100px 30px;
+
+    background-color: $color-chat-bg;
+
+    &__title {
+        font-size: 30px;
+        line-height: 35px;
+        color: $color-chat-text-primary;
+    }
+
+}

@@ -1,0 +1,15 @@
+.avatar {
+    display: flex;
+
+    width: 41px;
+    height: 41px;
+    margin-top: 5px;
+
+    border: #fff 2px solid;
+    border-radius: 50%;
+
+    &_operation {
+        margin-top: 0;
+        align-self: center;
+    }
+}

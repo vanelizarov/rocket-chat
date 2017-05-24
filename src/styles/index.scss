@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500');
+
+@import "./reset";
+@import "./colors";
+
+body {
+    background-color: $color-chat-bg;
+
+    *, *::after, *::before {
+        font-family: Roboto, sans-serif;
+        font-weight: 400;
+    }
+}

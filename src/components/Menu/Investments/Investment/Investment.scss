@@ -1,0 +1,45 @@
+@import "../../../../styles/colors";
+
+.investment {
+    display: block;
+    position: relative;
+    padding: 30px 40px;
+
+    &:nth-child(2n) {
+        background: #f9f9f9;
+        border-top: #eee solid 1px;
+        border-bottom: #eee solid 1px;
+    }
+
+    &__bank,
+    &__period,
+    &__rate,
+    &__begin {
+        color: $color-bills-text-secondary;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    &__name {
+        color: $color-chat-text-headers;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    &__logo {
+        display: block;
+        position: absolute;
+
+        top: 30px;
+        right: 40px;
+
+        border: #eee 1px solid;
+    }
+
+    &__sum {
+        color: $color-bills-text-primary;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+}

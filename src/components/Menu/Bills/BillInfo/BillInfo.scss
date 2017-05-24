@@ -1,0 +1,103 @@
+@import "../../../../styles/colors";
+
+.bill-info {
+    display: block;
+
+    .bill-info__data {
+        position: relative;
+        padding: 30px 40px;
+
+        &__link {
+            position: absolute;
+            top: 30px;
+            right: 40px;
+
+            cursor: pointer;
+        }
+
+        &__number {
+            font-size: 20px;
+            color: $color-bills-text-primary;
+            margin-bottom: 13px;
+        }
+
+        &__total {
+            font-size: 24px;
+            color: $color-bills-text-primary;
+            margin-bottom: 15px;
+        }
+
+        &__rate, &__date {
+            font-size: 14px;
+            color: $color-bills-text-secondary;
+            line-height: 20px;
+        }
+    }
+
+    &__history {
+        margin-top: 61px;
+
+        &__title {
+            font-size: 16px;
+            line-height: 20px;
+            color: $color-bills-text-secondary;
+            margin: 0 40px;
+        }
+
+        &__list {
+            display: flex;
+            flex-direction: column;
+
+            position: relative;
+
+            overflow-y: scroll;
+            overflow-x: hidden;
+
+            height: calc(100vh - 476px);
+
+            &::-webkit-scrollbar {
+                width: 0
+            }
+
+            &__cell {
+                position: relative;
+                padding: 12px 40px;
+
+                &:nth-child(2n) {
+                    background: #f9f9f9;
+                    border-top: #eee solid 1px;
+                    border-bottom: #eee solid 1px;
+                }
+
+                .btn-send {
+                    position: absolute;
+                    top: 24px;
+                    right: 40px;
+
+                    cursor: pointer;
+                    outline: 0;
+                }
+
+                .date {
+                    font-size: 14px;
+                    height: 20px;
+                    color: $color-chat-text-dates;
+                }
+
+                .info {
+                    font-size: 14px;
+                    height: 20px;
+                    color: $color-chat-text-headers;
+
+                    .positive {
+                        color: $color-transactions-positive;
+                    }
+
+                    .negative {
+                        color: $color-transactions-negative
+                    }
+                }
+            }
+        }
+    }
+}

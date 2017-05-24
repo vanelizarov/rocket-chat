@@ -1,0 +1,84 @@
+@import "../../../../styles/colors";
+
+.bubble {
+    display: flex;
+    flex: 0 0 auto;
+    margin-bottom: 30px;
+
+    &_left {
+        flex-direction: row;
+
+        .avatar {
+            margin-right: 13px;
+        }
+    }
+
+    &_right {
+        flex-direction: row-reverse;
+
+        .avatar {
+            margin-left: 13px;
+        }
+    }
+
+    .msg {
+        //display: flex;
+
+        background-color: #fff;
+        box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.05);
+
+        &_operation {
+            flex-direction: column;
+            padding: 15px 19px 20px 18px;
+
+            border: $color-accent 1px solid;
+            border-radius: 5px;
+
+            .msg__title {
+                margin-bottom: 8px;
+                height: 20px;
+
+                font-size: 16px;
+                color: $color-chat-text-headers;
+            }
+
+            .msg__date {
+                font-size: 14px;
+                height: 20px;
+                color: $color-chat-text-dates;
+            }
+
+            .msg__info {
+                font-size: 14px;
+                height: 20px;
+                color: $color-chat-text-headers;
+
+                .positive {
+                    color: $color-transactions-positive;
+                }
+
+                .negative {
+                    color: $color-transactions-negative
+                }
+            }
+
+        }
+
+        &_std {
+            font-size: 14px;
+            line-height: 20px;
+            color: $color-chat-text-secondary;
+            -webkit-hyphens: auto;
+            -moz-hyphens: auto;
+            -ms-hyphens: auto;
+            hyphens: auto;
+
+            padding: 14px 16px 16px 20px;
+
+            .msg__name {
+                color: $color-chat-text-primary;
+            }
+        }
+
+    }
+}

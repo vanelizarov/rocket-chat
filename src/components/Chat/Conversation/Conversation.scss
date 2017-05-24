@@ -1,0 +1,45 @@
+@import "../../../styles/colors";
+
+.conversation {
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    height: calc(100vh - 322px);
+    margin-right: -71px;
+    padding-right: 62px;
+
+    .separator {
+        display: block;
+        height: 19px;
+        margin: 11px auto 33px;
+
+        font-size: 16px;
+        color: $color-chat-text-dates;
+
+        &:first-child {
+            margin-top: 38px;
+        }
+    }
+
+    &::-webkit-scrollbar {
+        width: 9px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: #e4e4e4;
+        margin-top: 97px;
+        border-radius: 4.5px;
+    }
+
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $color-accent;
+        border-radius: 4.5px;
+    }
+
+}

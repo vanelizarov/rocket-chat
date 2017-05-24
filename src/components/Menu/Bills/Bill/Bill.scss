@@ -1,0 +1,51 @@
+@import "../../../../styles/colors";
+
+.bill {
+    display: block;
+    position: relative;
+    padding: 30px 40px;
+
+    &:nth-child(2n) {
+        background: #f9f9f9;
+        border-top: #eee solid 1px;
+        border-bottom: #eee solid 1px;
+    }
+
+    &__link {
+        position: absolute;
+        top: 30px;
+        right: 40px;
+
+        cursor: pointer;
+    }
+
+    &__number {
+        font-size: 20px;
+        color: $color-bills-text-primary;
+        margin-bottom: 13px;
+    }
+
+    &__total {
+        font-size: 24px;
+        color: $color-bills-text-primary;
+        margin-bottom: 15px;
+    }
+
+    &__rate, &__date, &__last-operation {
+        font-size: 14px;
+        color: $color-bills-text-secondary;
+        line-height: 20px;
+    }
+
+    &__last-operation {
+
+        .positive {
+            color: $color-transactions-positive;
+        }
+
+        .negative {
+            color: $color-transactions-negative
+        }
+    }
+
+}

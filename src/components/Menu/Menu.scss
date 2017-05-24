@@ -1,0 +1,48 @@
+@import "../../styles/colors";
+
+.menu {
+    display: flex;
+    flex-direction: column;
+
+    min-width: 545px;
+    width: 545px;
+    height: 100vh;
+    padding: 110px 60px 30px;
+
+    background: #fff;
+
+    .switcher {
+        display: flex;
+        align-self: center;
+
+        width: 343px;
+        min-height: 47px;
+        height: 47px;
+        margin-bottom: 35px;
+
+        background: #fff;
+        border: $color-accent 1px solid;
+        border-radius: 4px;
+
+        &__link {
+            height: 100%;
+            width: 50%;
+
+            color: $color-accent;
+            background: transparent;
+
+            font-size: 20px;
+            text-decoration: none;
+            text-align: center;
+            line-height: 45px;
+
+            &_active {
+                color: $color-in-accent;
+                background: $color-accent;
+            }
+
+        }
+
+    }
+
+}

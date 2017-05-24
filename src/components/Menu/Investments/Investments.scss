@@ -1,0 +1,17 @@
+@import "../../../styles/colors";
+
+.investments {
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    height: calc(100vh - 190px);
+
+    &::-webkit-scrollbar {
+        width: 0
+    }
+}
