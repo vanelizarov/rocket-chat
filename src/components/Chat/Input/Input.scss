@@ -38,9 +38,15 @@
         border-radius: 4px;
         outline: 0;
 
-        &::placeholder,
-        &:-moz-placeholder,
-        &::-moz-placeholder,
+        &::placeholder {
+            color: rgba(#000, 0.3);
+        }
+        &:-moz-placeholder {
+            color: rgba(#000, 0.3);
+        }
+        &::-moz-placeholder {
+            color: rgba(#000, 0.3);
+        }
         &::-webkit-input-placeholder {
             color: rgba(#000, 0.3);
         }
