@@ -1,24 +1,22 @@
 # 🚀 Rocket Chat
 
-Тестовое задание для Рокетбанка
+Bank support chat concept for Rocket Bank
 
-### Установка и запуск
+### Installation and launch
 ```
 npm install
 npm run start
 ```
 
-Запустится dev-сервер по адресу [http://localhost:3000/](http://localhost:3000)
+After that the dev server will start at [http://localhost:3000/](http://localhost:3000)
 
-### Сборка продакшн-бандла
+### Building production bundle
 ```
 npm run build
 ```
 
-Затем можно использовать [serve](https://www.npmjs.com/package/serve) для запуска сервера:
+Then it's possible to use f.e. [serve](https://www.npmjs.com/package/serve) to laucnh server:
 
 ```
 serve -s build
 ```
-
-Запустится сервер по адресу [http://localhost:5000/](http://localhost:5000)
